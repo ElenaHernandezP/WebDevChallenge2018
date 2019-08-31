@@ -9,6 +9,7 @@
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
     $.src='//v2.zopim.com/?';z.t=+new Date;$.
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    z.livechat.departments.setVisitorDeprtment('spanish');
     onlineGreeting = "Habla con nosotras";
     offlineGreeting = 'Deja un mensaje';
     $zopim(function() {
@@ -17,7 +18,7 @@
       'offline': offlineGreeting
       });
     });
-  } 
+  }
   else if(locale === "pt-pt") {
     window.$zopim||(function(d,s){var z=$zopim=function(c){
     z._.push(c)},$=z.s=
@@ -25,6 +26,7 @@
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
     $.src='//v2.zopim.com/?';z.t=+new Date;$.
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    z.livechat.departments.setVisitorDeprtment('portugese');
     onlineGreeting = "Fale com a gente";
     offlineGreeting = 'Deixe uma mensagem';
     $zopim(function() {
@@ -33,7 +35,7 @@
       'offline': offlineGreeting
       });
     });
-  } 
+  }
   else if(locale === "fr") {
     window.$zopim||(function(d,s){var z=$zopim=function(c){
     z._.push(c)},$=z.s=
@@ -41,6 +43,7 @@
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
     $.src='//v2.zopim.com/?';z.t=+new Date;$.
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    z.livechat.departments.setVisitorDeprtment('french');
     onlineGreeting = "Parlez-nous";
     offlineGreeting = 'Laissez un message';
     $zopim(function() {
@@ -49,7 +52,7 @@
       'offline': offlineGreeting
       });
     });
-  } 
+  }
    else if(locale === "hi") {
     window.$zopim||(function(d,s){var z=$zopim=function(c){
     z._.push(c)},$=z.s=
@@ -57,6 +60,7 @@
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
     $.src='//v2.zopim.com/?';z.t=+new Date;$.
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    z.livechat.departments.setVisitorDeprtment('hindi');
     onlineGreeting = "हमारे साथ चैट करें";
     offlineGreeting = "हमें एक संदेश छोड़ दो";
     $zopim(function() {
@@ -73,6 +77,7 @@
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
     $.src='//v2.zopim.com/?';z.t=+new Date;$.
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    z.livechat.departments.setVisitorDeprtment('polish');
     onlineGreeting = "Rozmawiaj z nami";
     offlineGreeting = "Zostaw nam wiadomość";
     $zopim(function() {
@@ -89,6 +94,7 @@
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
     $.src='//v2.zopim.com/?';z.t=+new Date;$.
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    z.livechat.departments.setVisitorDeprtment('english');
     onlineGreeting = "Chat with us";
     offlineGreeting = "Leave us a message";
     $zopim(function() {
