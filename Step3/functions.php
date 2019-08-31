@@ -1,9 +1,12 @@
 <?php
 add_filter('gform_register_init_scripts', 'gform_display_weeks', 10, 2);
+// This function is used to calculate the pregnancy days and show if the person is still on days to take the abortion pill
 function gform_display_weeks($form) {
 $script = <<<EOT
   (function($){
+    //variable is used to change the lenguage
 var vals = {
+  // english
   en: {
     fields: {
       insertTenWeekReminderAfter: "#gform_page_4_6 .gform_page_fields",
@@ -31,6 +34,7 @@ var vals = {
       tenWeekReminder: "Remember! Using abortion pills at home is safer within the first 10 weeks of pregnancy."
     }
   },
+  // spanish
   es: {
     fields: {
       insertTenWeekReminderAfter: "#gform_page_10_6 .gform_page_fields",
@@ -58,6 +62,7 @@ var vals = {
       tenWeekReminder: "¡Recuerda! Usar pastillas abortivas en casa es más seguro durante las 10 primeras semanas de embarazo."
     }
   },
+  // polish
   pl: {
     fields: {
       insertTenWeekReminderAfter: "#gform_page_13_6 .gform_page_fields",
@@ -85,6 +90,7 @@ var vals = {
       tenWeekReminder: "Pamiętaj! Używanie pigułki aborcyjnej w domu jest bezpieczniejsze w ciągu pierwszych 10 tygodniach ciąży."
     }
   },
+  // french
    fr: {
     fields: {
       insertTenWeekReminderAfter: "#gform_page_22_6 .gform_page_fields",
@@ -112,6 +118,7 @@ var vals = {
       tenWeekReminder: "N'oubliez pas ! L’avortement à domicile à l’aide de la pilule abortive est sans risque pendant les 10 premières semaines de grossesse."
     }
   },
+  // portugese
   pt: {
     fields: {
       insertTenWeekReminderAfter: "#gform_page_23_6 .gform_page_fields",
@@ -139,6 +146,7 @@ var vals = {
       tenWeekReminder: "Aviso! O uso das pílulas abortivas em casa é um procedimento seguro dentro das primeiras 10 semanas de gravidez."
     }
   },
+  // hindi
   hi: {
     fields: {
       insertTenWeekReminderAfter: "#gform_page_24_6 .gform_page_fields",
@@ -167,6 +175,7 @@ var vals = {
     }
   }
 };
+// get the number of pregnancy days
 var getTotalDaysFrom = function(then) {
   var now = new Date();
   var diff = Math.floor(now.getTime() - then.getTime());
@@ -177,6 +186,7 @@ var getSelectedDate = function(context) {
   var thenArray = $(context).val().split("/");
   return new Date(thenArray[2], thenArray[1]-1, thenArray[0]);
 }
+// calculate the week using the days
 var getWeeks = function(totalDays) {
   return Math.floor(totalDays/7);
 }
@@ -209,15 +219,21 @@ var setTenWeekReminder = function(reminderText, insertAfterSelector) {
     $( replaceWithText ).insertAfter(insertAfterSelector);
   }
 };
+// variable to send then weeks reminder
 var hideTenWeekReminder = function() {
   $("#tenWeekReminder").hide();
 }
+// update number of week
 var updateWeeksLabel = function(newText, labelSelector) {
   $(labelSelector).text(newText);
 };
+// variable using to present the infromation
 var handleDateChange = function(language, totalDays) {
+  //var to select lenguage
   var v = vals[language];
+  // variable to show the correct text
   var vt = v["text"];
+  // variable to fill the space
   var vf = v["fields"];
   if(totalDays > 0) {
     var estimatedLMPText = getEstimatedLMPText(totalDays, vt["weeks"], vt["days"], vt["and"]);
@@ -337,7 +353,7 @@ function bones_register_sidebars() {
     'before_title' => '<h2 class="h3 module__title">',
     'after_title' => '</h2>',
   ));
-  
+
 } // don't remove this bracket!
-/* DON'T DELETE THIS CLOSING TAG */ 
+/* DON'T DELETE THIS CLOSING TAG */
 ?>
