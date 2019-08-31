@@ -1,4 +1,4 @@
-<script type="text/javascript">
+// <script type="text/javascript">
   var url = window.location.href;
   var locale = url.split("/")[5];
   var onlineGreeting, offlineGreeting;
@@ -11,7 +11,7 @@
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     z.livechat.departments.setVisitorDeprtment('spanish');
     onlineGreeting = "Habla con nosotras";
-    offlineGreeting = 'Deja un mensaje';
+    offlineGreeting = "Nuestros asesores no están disponibles en este momento, deje un mensaje y nos pondremos en contacto con usted pronto.";
     $zopim(function() {
       $zopim.livechat.setGreetings({
       'online': onlineGreeting,
@@ -28,7 +28,7 @@
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     z.livechat.departments.setVisitorDeprtment('portugese');
     onlineGreeting = "Fale com a gente";
-    offlineGreeting = 'Deixe uma mensagem';
+    offlineGreeting = 'Nossos conselheiros não estão disponíveis no momento, deixe uma mensagem e entraremos em contato com você em breve.';
     $zopim(function() {
       $zopim.livechat.setGreetings({
       'online': onlineGreeting,
@@ -45,7 +45,7 @@
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     z.livechat.departments.setVisitorDeprtment('french');
     onlineGreeting = "Parlez-nous";
-    offlineGreeting = 'Laissez un message';
+    offlineGreeting = 'Nos conseillers ne sont pas disponibles pour le moment, veuillez laisser un message et nous vous contacterons dans les meilleurs délais.';
     $zopim(function() {
       $zopim.livechat.setGreetings({
       'online': onlineGreeting,
@@ -62,7 +62,7 @@
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     z.livechat.departments.setVisitorDeprtment('hindi');
     onlineGreeting = "हमारे साथ चैट करें";
-    offlineGreeting = "हमें एक संदेश छोड़ दो";
+    offlineGreeting = "हमारे काउंसलर फिलहाल उपलब्ध नहीं हैं, कृपया एक संदेश छोड़ दें और हम आपसे जल्द ही संपर्क करेंगे।ो";
     $zopim(function() {
       $zopim.livechat.setGreetings({
       'online': onlineGreeting,
@@ -79,7 +79,7 @@
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     z.livechat.departments.setVisitorDeprtment('polish');
     onlineGreeting = "Rozmawiaj z nami";
-    offlineGreeting = "Zostaw nam wiadomość";
+    offlineGreeting = "Nasi doradcy nie są w tej chwili dostępni, proszę zostaw wiadomość, a my skontaktujemy się z Tobą wkrótce";
     $zopim(function() {
       $zopim.livechat.setGreetings({
       'online': onlineGreeting,
@@ -96,7 +96,7 @@
     type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     z.livechat.departments.setVisitorDeprtment('english');
     onlineGreeting = "Chat with us";
-    offlineGreeting = "Leave us a message";
+    offlineGreeting = "Our counselors are not available at the moment, please leave a message and we will contact you soon.";
     $zopim(function() {
       $zopim.livechat.setGreetings({
       'online': onlineGreeting,
@@ -104,4 +104,4 @@
       });
     });
   }
-</script>
+// </script>
